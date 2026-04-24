@@ -37,6 +37,8 @@
     "@niche-works/dev": "^0.4.0",
     "@niche-works/rollup-plugin-dist-package": "^0.1.0",
     "@types/node": "^25.5.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "fast-glob": "^3.3.3",
     "prettier": "^3.8.3",
     "prettier-plugin-organize-imports": "^4.3.0",

@@ -1,5 +1,5 @@
-import { CSSProperties } from "react";
-import type { StyleProxyOptions } from "./types";
+import type { CSSProperties } from 'react';
+import type { StyleProxyOptions } from './types';
 
 /**
  * スタイル関連のプロパティをスタイルプロパティ(styleやcss)へ適用する
@@ -31,7 +31,7 @@ function _styleProxy<P = {}, S = CSSProperties>(
   style: S,
   options: StyleProxyOptions = {},
 ) {
-  const { styleProp = "style", styleApplyMode, stylePriority } = options;
+  const { styleProp = 'style', styleApplyMode, stylePriority } = options;
 
   if (style && Object.keys(style).length) {
     const srcStyle = { ...style };
@@ -59,9 +59,9 @@ function _styleProxy<P = {}, S = CSSProperties>(
         // 配列の場合
         props[styleProp] = append([srcStyle], orgStyle);
       } else if (
-        Object.prototype.toString.call(orgStyle) === "[object Object]"
+        Object.prototype.toString.call(orgStyle) === '[object Object]'
       ) {
-        if (styleApplyMode === "append") {
+        if (styleApplyMode === 'append') {
           // オブジェクトで'append'の場合
           props[styleProp] = append([srcStyle], [orgStyle]);
         } else {
