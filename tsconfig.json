@@ -4,7 +4,7 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
-    "types": ["node", "vitest/globals.d.ts"],
+    "types": ["node"],
     "skipLibCheck": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -40,6 +40,5 @@
     "strictPropertyInitialization": false,
     "preserveSymlinks": false
   },
-  "include": ["src", "globals.d.ts"],
-  "exclude": ["src/**/*.test.*"]
+  "include": ["src", "globals.d.ts"]
 }
